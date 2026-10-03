@@ -2,193 +2,86 @@
 <title id="t">mootez-1337</title>
 <desc id="d">mootez-1337: cybersecurity msc / pentest / soc / ai-ml. open to research collaborations.</desc>
 <defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E1726"/><stop offset="1" stop-color="#13283D"/></linearGradient>
-<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#1E3450"/></pattern>
-<radialGradient id="scope"><stop offset="0" stop-color="#4FD1C5" stop-opacity=".10"/><stop offset="1" stop-color="#4FD1C5" stop-opacity="0"/></radialGradient>
-<filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
-<clipPath id="card"><rect width="900" height="300" rx="14"/></clipPath>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#2D3B40"/></pattern>
+<radialGradient id="scope"><stop offset="0" stop-color="#1ABB9B" stop-opacity=".08"/><stop offset="1" stop-color="#1ABB9B" stop-opacity="0"/></radialGradient>
+<clipPath id="card"><rect width="900" height="300" rx="12"/></clipPath>
 </defs>
 <style>
-text { font-family: 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'DejaVu Sans Mono', monospace; }
-.prompt { fill: #8AA0B8; font-size: 15px; }
-.name { font-size: 58px; font-weight: 800; }
-.bone { fill: #F1EBDD; } .teal { fill: #4FD1C5; }
-.noise { fill: #2C7A7B; font-size: 58px; font-weight: 800; opacity: 0; animation: flick .32s linear infinite; }
-.nz { animation: hide 0s forwards; }
-.lock { opacity: 0; animation: show .15s ease-out forwards; }
-.sub { fill: #F1EBDD; font-size: 16px; opacity: .85; }
-.ch { opacity: 0; animation: show 0s forwards; }
-.caret { fill: #4FD1C5; opacity: 0; animation: travel 1.44s steps(41, end) 1.68s forwards, blink 1.06s steps(1) 1.68s infinite; }
-.status { opacity: 0; animation: show .4s ease-out 3.41s forwards; }
-.status text { fill: #8AA0B8; font-size: 14px; }
-.pulse { fill: #FFB547; transform-box: fill-box; transform-origin: center; animation: pulse 2s ease-out infinite; }
-.label { fill: #8AA0B8; font-size: 12px; }
-.ring { fill: none; stroke: #4FD1C5; stroke-opacity: .22; }
-@keyframes flick { 0%, 24.99% { opacity: 1; } 25%, 100% { opacity: 0; } }
-@keyframes hide { to { visibility: hidden; } }
+text { font-family: 'JetBrainsMono Nerd Font', 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'DejaVu Sans Mono', monospace; font-size: 15px; }
+.dim { fill: #8D8F8D; } .text { fill: #d8d8d8; }
+.name { fill: #f8f8f8; font-size: 56px; font-weight: 800; }
+.handle { fill: #8D8F8D; font-size: 56px; font-weight: 400; }
+.label { fill: #d8d8d8; font-size: 12px; }
+.key { opacity: 0; animation: show 0s forwards; }
+.out { opacity: 0; animation: show 0s 1.61s forwards; }
+.cur1 { fill: #d8d8d8; animation: travel 0.66s steps(6, end) 0.60s forwards, gone 0s 1.61s forwards; }
+.cur2 { fill: #d8d8d8; opacity: 0; animation: blink 1.06s steps(1) 1.71s infinite; }
+.pulse { fill: #7cafc2; animation: pulse 2s ease-in-out infinite; }
 @keyframes show { to { opacity: 1; } }
+@keyframes gone { to { visibility: hidden; } }
 @keyframes blink { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }
-@keyframes travel { from { transform: translateX(0); } to { transform: translateX(401.8px); } }
+@keyframes travel { to { transform: translateX(55.2px); } }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
 @media (prefers-reduced-motion: reduce) {
-  .noise { display: none; }
-  .lock, .ch, .status { animation: none; opacity: 1; }
-  .caret, .pulse { animation: none; }
-  .caret { opacity: 0; }
+  .key, .out { animation: none; opacity: 1; }
+  .cur1 { animation: none; visibility: hidden; }
+  .cur2 { animation: none; opacity: 1; }
+  .pulse { animation: none; }
 }
 </style>
 <g clip-path="url(#card)">
-<rect width="900" height="300" fill="url(#bg)"/><rect width="900" height="300" fill="url(#dots)" opacity=".7"/>
+<rect width="900" height="300" fill="#222D31"/><rect width="900" height="300" fill="url(#dots)"/>
 <circle cx="735" cy="150" r="118" fill="url(#scope)"/>
-<circle class="ring" cx="735" cy="150" r="118"/>
-<circle class="ring" cx="735" cy="150" r="77.9"/>
-<circle class="ring" cx="735" cy="150" r="38.9"/>
-<path class="ring" d="M617 150H853M735 32V268"/>
+<circle cx="735" cy="150" r="118" fill="none" stroke="#1ABB9B" stroke-opacity=".2"/>
+<circle cx="735" cy="150" r="77.9" fill="none" stroke="#1ABB9B" stroke-opacity=".2"/>
+<circle cx="735" cy="150" r="38.9" fill="none" stroke="#1ABB9B" stroke-opacity=".2"/>
+<path d="M617 150H853M735 32V268" stroke="#1ABB9B" stroke-opacity=".2"/>
 <g>
-<path d="M735 150L852.71 141.77A118 118 0 0 1 853.0 150.0Z" fill="#4FD1C5" fill-opacity="0.3"/>
-<path d="M735 150L851.85 133.58A118 118 0 0 1 852.71 141.77Z" fill="#4FD1C5" fill-opacity="0.266"/>
-<path d="M735 150L850.42 125.47A118 118 0 0 1 851.85 133.58Z" fill="#4FD1C5" fill-opacity="0.234"/>
-<path d="M735 150L848.43 117.47A118 118 0 0 1 850.42 125.47Z" fill="#4FD1C5" fill-opacity="0.204"/>
-<path d="M735 150L845.88 109.64A118 118 0 0 1 848.43 117.47Z" fill="#4FD1C5" fill-opacity="0.175"/>
-<path d="M735 150L842.8 102.01A118 118 0 0 1 845.88 109.64Z" fill="#4FD1C5" fill-opacity="0.148"/>
-<path d="M735 150L839.19 94.6A118 118 0 0 1 842.8 102.01Z" fill="#4FD1C5" fill-opacity="0.123"/>
-<path d="M735 150L835.07 87.47A118 118 0 0 1 839.19 94.6Z" fill="#4FD1C5" fill-opacity="0.099"/>
-<path d="M735 150L830.46 80.64A118 118 0 0 1 835.07 87.47Z" fill="#4FD1C5" fill-opacity="0.077"/>
-<path d="M735 150L825.39 74.15A118 118 0 0 1 830.46 80.64Z" fill="#4FD1C5" fill-opacity="0.058"/>
-<path d="M735 150L819.88 68.03A118 118 0 0 1 825.39 74.15Z" fill="#4FD1C5" fill-opacity="0.04"/>
-<path d="M735 150L813.96 62.31A118 118 0 0 1 819.88 68.03Z" fill="#4FD1C5" fill-opacity="0.026"/>
-<path d="M735 150L807.65 57.01A118 118 0 0 1 813.96 62.31Z" fill="#4FD1C5" fill-opacity="0.013"/>
-<path d="M735 150L800.98 52.17A118 118 0 0 1 807.65 57.01Z" fill="#4FD1C5" fill-opacity="0.004"/>
-<line x1="735" y1="150" x2="853.0" y2="150.0" stroke="#4FD1C5" stroke-width="2"/><animateTransform attributeName="transform" type="rotate" from="0 735 150" to="360 735 150" dur="4.0s" repeatCount="indefinite"/></g>
-<circle cx="735" cy="150" r="3" fill="#4FD1C5"/>
-<circle cx="791.21" cy="182.45" r="3" fill="none" stroke="#FFB547" stroke-width=".8" opacity="0"><animate attributeName="r" values="3;14;14" keyTimes="0;.3;1" begin="0.33s" dur="4.0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0;0" keyTimes="0;.3;1" begin="0.33s" dur="4.0s" repeatCount="indefinite"/></circle>
-<circle cx="791.21" cy="182.45" r="3.5" fill="#FFB547" opacity=".3"><animate attributeName="opacity" values="1;.3;.3" keyTimes="0;.6;1" begin="0.33s" dur="4.0s" repeatCount="indefinite"/></circle>
-<text class="label" x="801.21" y="186.45" opacity=".45">soc<animate attributeName="opacity" values="1;.3;.3" keyTimes="0;.6;1" begin="0.33s" dur="4.0s" repeatCount="indefinite"/></text>
-<circle cx="704.73" cy="233.16" r="3" fill="none" stroke="#FFB547" stroke-width=".8" opacity="0"><animate attributeName="r" values="3;14;14" keyTimes="0;.3;1" begin="1.22s" dur="4.0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0;0" keyTimes="0;.3;1" begin="1.22s" dur="4.0s" repeatCount="indefinite"/></circle>
-<circle cx="704.73" cy="233.16" r="3.5" fill="#FFB547" opacity=".3"><animate attributeName="opacity" values="1;.3;.3" keyTimes="0;.6;1" begin="1.22s" dur="4.0s" repeatCount="indefinite"/></circle>
-<text class="label" x="694.73" y="237.16" text-anchor="end" opacity=".45">ai / ml<animate attributeName="opacity" values="1;.3;.3" keyTimes="0;.6;1" begin="1.22s" dur="4.0s" repeatCount="indefinite"/></text>
-<circle cx="685.1" cy="131.84" r="3" fill="none" stroke="#FFB547" stroke-width=".8" opacity="0"><animate attributeName="r" values="3;14;14" keyTimes="0;.3;1" begin="2.22s" dur="4.0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0;0" keyTimes="0;.3;1" begin="2.22s" dur="4.0s" repeatCount="indefinite"/></circle>
-<circle cx="685.1" cy="131.84" r="3.5" fill="#FFB547" opacity=".3"><animate attributeName="opacity" values="1;.3;.3" keyTimes="0;.6;1" begin="2.22s" dur="4.0s" repeatCount="indefinite"/></circle>
-<text class="label" x="675.1" y="135.84" text-anchor="end" opacity=".45">ctf<animate attributeName="opacity" values="1;.3;.3" keyTimes="0;.6;1" begin="2.22s" dur="4.0s" repeatCount="indefinite"/></text>
-<circle cx="702.71" cy="61.29" r="3" fill="none" stroke="#FFB547" stroke-width=".8" opacity="0"><animate attributeName="r" values="3;14;14" keyTimes="0;.3;1" begin="2.78s" dur="4.0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0;0" keyTimes="0;.3;1" begin="2.78s" dur="4.0s" repeatCount="indefinite"/></circle>
-<circle cx="702.71" cy="61.29" r="3.5" fill="#FFB547" opacity=".3"><animate attributeName="opacity" values="1;.3;.3" keyTimes="0;.6;1" begin="2.78s" dur="4.0s" repeatCount="indefinite"/></circle>
-<text class="label" x="692.71" y="65.28999999999999" text-anchor="end" opacity=".45">research<animate attributeName="opacity" values="1;.3;.3" keyTimes="0;.6;1" begin="2.78s" dur="4.0s" repeatCount="indefinite"/></text>
-<circle cx="776.3" cy="78.47" r="3" fill="none" stroke="#FFB547" stroke-width=".8" opacity="0"><animate attributeName="r" values="3;14;14" keyTimes="0;.3;1" begin="3.33s" dur="4.0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0;0" keyTimes="0;.3;1" begin="3.33s" dur="4.0s" repeatCount="indefinite"/></circle>
-<circle cx="776.3" cy="78.47" r="3.5" fill="#FFB547" opacity=".3"><animate attributeName="opacity" values="1;.3;.3" keyTimes="0;.6;1" begin="3.33s" dur="4.0s" repeatCount="indefinite"/></circle>
-<text class="label" x="786.3" y="82.47" opacity=".45">pentest<animate attributeName="opacity" values="1;.3;.3" keyTimes="0;.6;1" begin="3.33s" dur="4.0s" repeatCount="indefinite"/></text>
-<text class="prompt" x="48" y="78">~$ whoami</text>
-<text class="name lock" x="48.0 83.6 119.2 154.8 190.4 226.0 261.6 297.2 332.8 368.4 404.0" y="150" fill="#4FD1C5" opacity=".5" filter="url(#glow)" style="animation-delay:1.33s">mootez-1337</text>
-<g class="nz" style="animation-delay:0.55s">
-<text class="noise" x="48.0" y="150" style="animation-delay:-0.00s">8</text>
-<text class="noise" x="48.0" y="150" style="animation-delay:-0.08s">&lt;</text>
-<text class="noise" x="48.0" y="150" style="animation-delay:-0.16s">x</text>
-<text class="noise" x="48.0" y="150" style="animation-delay:-0.24s">#</text>
-</g>
-<text class="name lock bone" x="48.0" y="150" style="animation-delay:0.55s">m</text>
-<g class="nz" style="animation-delay:0.63s">
-<text class="noise" x="83.6" y="150" style="animation-delay:-0.00s">k</text>
-<text class="noise" x="83.6" y="150" style="animation-delay:-0.08s">v</text>
-<text class="noise" x="83.6" y="150" style="animation-delay:-0.16s">y</text>
-<text class="noise" x="83.6" y="150" style="animation-delay:-0.24s">?</text>
-</g>
-<text class="name lock bone" x="83.6" y="150" style="animation-delay:0.63s">o</text>
-<g class="nz" style="animation-delay:0.76s">
-<text class="noise" x="119.2" y="150" style="animation-delay:-0.00s">t</text>
-<text class="noise" x="119.2" y="150" style="animation-delay:-0.08s">z</text>
-<text class="noise" x="119.2" y="150" style="animation-delay:-0.16s">/</text>
-<text class="noise" x="119.2" y="150" style="animation-delay:-0.24s">n</text>
-</g>
-<text class="name lock bone" x="119.2" y="150" style="animation-delay:0.76s">o</text>
-<g class="nz" style="animation-delay:0.83s">
-<text class="noise" x="154.8" y="150" style="animation-delay:-0.00s">x</text>
-<text class="noise" x="154.8" y="150" style="animation-delay:-0.08s">g</text>
-<text class="noise" x="154.8" y="150" style="animation-delay:-0.16s">1</text>
-<text class="noise" x="154.8" y="150" style="animation-delay:-0.24s">?</text>
-</g>
-<text class="name lock bone" x="154.8" y="150" style="animation-delay:0.83s">t</text>
-<g class="nz" style="animation-delay:0.82s">
-<text class="noise" x="190.4" y="150" style="animation-delay:-0.00s">e</text>
-<text class="noise" x="190.4" y="150" style="animation-delay:-0.08s">6</text>
-<text class="noise" x="190.4" y="150" style="animation-delay:-0.16s">/</text>
-<text class="noise" x="190.4" y="150" style="animation-delay:-0.24s">+</text>
-</g>
-<text class="name lock bone" x="190.4" y="150" style="animation-delay:0.82s">e</text>
-<g class="nz" style="animation-delay:0.89s">
-<text class="noise" x="226.0" y="150" style="animation-delay:-0.00s">z</text>
-<text class="noise" x="226.0" y="150" style="animation-delay:-0.08s">z</text>
-<text class="noise" x="226.0" y="150" style="animation-delay:-0.16s">t</text>
-<text class="noise" x="226.0" y="150" style="animation-delay:-0.24s">+</text>
-</g>
-<text class="name lock bone" x="226.0" y="150" style="animation-delay:0.89s">z</text>
-<g class="nz" style="animation-delay:0.88s">
-<text class="noise" x="261.6" y="150" style="animation-delay:-0.00s">w</text>
-<text class="noise" x="261.6" y="150" style="animation-delay:-0.08s">$</text>
-<text class="noise" x="261.6" y="150" style="animation-delay:-0.16s">h</text>
-<text class="noise" x="261.6" y="150" style="animation-delay:-0.24s">3</text>
-</g>
-<text class="name lock teal" x="261.6" y="150" style="animation-delay:0.88s">-</text>
-<g class="nz" style="animation-delay:1.02s">
-<text class="noise" x="297.2" y="150" style="animation-delay:-0.00s">k</text>
-<text class="noise" x="297.2" y="150" style="animation-delay:-0.08s">u</text>
-<text class="noise" x="297.2" y="150" style="animation-delay:-0.16s">=</text>
-<text class="noise" x="297.2" y="150" style="animation-delay:-0.24s">/</text>
-</g>
-<text class="name lock teal" x="297.2" y="150" style="animation-delay:1.02s">1</text>
-<g class="nz" style="animation-delay:1.27s">
-<text class="noise" x="332.8" y="150" style="animation-delay:-0.00s">$</text>
-<text class="noise" x="332.8" y="150" style="animation-delay:-0.08s">3</text>
-<text class="noise" x="332.8" y="150" style="animation-delay:-0.16s">$</text>
-<text class="noise" x="332.8" y="150" style="animation-delay:-0.24s">q</text>
-</g>
-<text class="name lock teal" x="332.8" y="150" style="animation-delay:1.27s">3</text>
-<g class="nz" style="animation-delay:1.32s">
-<text class="noise" x="368.4" y="150" style="animation-delay:-0.00s">9</text>
-<text class="noise" x="368.4" y="150" style="animation-delay:-0.08s">e</text>
-<text class="noise" x="368.4" y="150" style="animation-delay:-0.16s">?</text>
-<text class="noise" x="368.4" y="150" style="animation-delay:-0.24s">7</text>
-</g>
-<text class="name lock teal" x="368.4" y="150" style="animation-delay:1.32s">3</text>
-<g class="nz" style="animation-delay:1.44s">
-<text class="noise" x="404.0" y="150" style="animation-delay:-0.00s">#</text>
-<text class="noise" x="404.0" y="150" style="animation-delay:-0.08s">c</text>
-<text class="noise" x="404.0" y="150" style="animation-delay:-0.16s">e</text>
-<text class="noise" x="404.0" y="150" style="animation-delay:-0.24s">0</text>
-</g>
-<text class="name lock teal" x="404.0" y="150" style="animation-delay:1.44s">7</text>
-<text class="sub ch" x="48.0" y="192" style="animation-delay:1.680s">c</text>
-<text class="sub ch" x="57.8" y="192" style="animation-delay:1.715s">y</text>
-<text class="sub ch" x="67.6" y="192" style="animation-delay:1.750s">b</text>
-<text class="sub ch" x="77.4" y="192" style="animation-delay:1.785s">e</text>
-<text class="sub ch" x="87.2" y="192" style="animation-delay:1.820s">r</text>
-<text class="sub ch" x="97.0" y="192" style="animation-delay:1.855s">s</text>
-<text class="sub ch" x="106.8" y="192" style="animation-delay:1.890s">e</text>
-<text class="sub ch" x="116.6" y="192" style="animation-delay:1.925s">c</text>
-<text class="sub ch" x="126.4" y="192" style="animation-delay:1.960s">u</text>
-<text class="sub ch" x="136.2" y="192" style="animation-delay:1.995s">r</text>
-<text class="sub ch" x="146.0" y="192" style="animation-delay:2.030s">i</text>
-<text class="sub ch" x="155.8" y="192" style="animation-delay:2.065s">t</text>
-<text class="sub ch" x="165.6" y="192" style="animation-delay:2.100s">y</text>
-<text class="sub ch" x="185.2" y="192" style="animation-delay:2.170s">m</text>
-<text class="sub ch" x="195.0" y="192" style="animation-delay:2.205s">s</text>
-<text class="sub ch" x="204.8" y="192" style="animation-delay:2.240s">c</text>
-<text class="sub ch" x="224.4" y="192" style="animation-delay:2.310s">/</text>
-<text class="sub ch" x="244.0" y="192" style="animation-delay:2.380s">p</text>
-<text class="sub ch" x="253.8" y="192" style="animation-delay:2.415s">e</text>
-<text class="sub ch" x="263.6" y="192" style="animation-delay:2.450s">n</text>
-<text class="sub ch" x="273.4" y="192" style="animation-delay:2.485s">t</text>
-<text class="sub ch" x="283.2" y="192" style="animation-delay:2.520s">e</text>
-<text class="sub ch" x="293.0" y="192" style="animation-delay:2.555s">s</text>
-<text class="sub ch" x="302.8" y="192" style="animation-delay:2.590s">t</text>
-<text class="sub ch" x="322.4" y="192" style="animation-delay:2.660s">/</text>
-<text class="sub ch" x="342.0" y="192" style="animation-delay:2.730s">s</text>
-<text class="sub ch" x="351.8" y="192" style="animation-delay:2.765s">o</text>
-<text class="sub ch" x="361.6" y="192" style="animation-delay:2.800s">c</text>
-<text class="sub ch" x="381.2" y="192" style="animation-delay:2.870s">/</text>
-<text class="sub ch" x="400.8" y="192" style="animation-delay:2.940s">a</text>
-<text class="sub ch" x="410.6" y="192" style="animation-delay:2.975s">i</text>
-<text class="sub ch" x="420.4" y="192" style="animation-delay:3.010s">-</text>
-<text class="sub ch" x="430.2" y="192" style="animation-delay:3.045s">m</text>
-<text class="sub ch" x="440.0" y="192" style="animation-delay:3.080s">l</text>
-<rect class="caret" x="48" y="178" width="8.8" height="18"/>
-<g class="status"><circle class="pulse" cx="53" cy="232" r="5"/><text x="68" y="237">open to research collaborations</text></g>
-</g></svg>
+<path d="M735 150L852.71 141.77A118 118 0 0 1 853.0 150.0Z" fill="#1ABB9B" fill-opacity="0.28"/>
+<path d="M735 150L851.85 133.58A118 118 0 0 1 852.71 141.77Z" fill="#1ABB9B" fill-opacity="0.249"/>
+<path d="M735 150L850.42 125.47A118 118 0 0 1 851.85 133.58Z" fill="#1ABB9B" fill-opacity="0.219"/>
+<path d="M735 150L848.43 117.47A118 118 0 0 1 850.42 125.47Z" fill="#1ABB9B" fill-opacity="0.19"/>
+<path d="M735 150L845.88 109.64A118 118 0 0 1 848.43 117.47Z" fill="#1ABB9B" fill-opacity="0.163"/>
+<path d="M735 150L842.8 102.01A118 118 0 0 1 845.88 109.64Z" fill="#1ABB9B" fill-opacity="0.138"/>
+<path d="M735 150L839.19 94.6A118 118 0 0 1 842.8 102.01Z" fill="#1ABB9B" fill-opacity="0.114"/>
+<path d="M735 150L835.07 87.47A118 118 0 0 1 839.19 94.6Z" fill="#1ABB9B" fill-opacity="0.092"/>
+<path d="M735 150L830.46 80.64A118 118 0 0 1 835.07 87.47Z" fill="#1ABB9B" fill-opacity="0.072"/>
+<path d="M735 150L825.39 74.15A118 118 0 0 1 830.46 80.64Z" fill="#1ABB9B" fill-opacity="0.054"/>
+<path d="M735 150L819.88 68.03A118 118 0 0 1 825.39 74.15Z" fill="#1ABB9B" fill-opacity="0.038"/>
+<path d="M735 150L813.96 62.31A118 118 0 0 1 819.88 68.03Z" fill="#1ABB9B" fill-opacity="0.024"/>
+<path d="M735 150L807.65 57.01A118 118 0 0 1 813.96 62.31Z" fill="#1ABB9B" fill-opacity="0.012"/>
+<path d="M735 150L800.98 52.17A118 118 0 0 1 807.65 57.01Z" fill="#1ABB9B" fill-opacity="0.004"/>
+<line x1="735" y1="150" x2="853.0" y2="150.0" stroke="#1ABB9B" stroke-width="2"/><animateTransform attributeName="transform" type="rotate" from="0 735 150" to="360 735 150" dur="4.0s" repeatCount="indefinite"/></g>
+<circle cx="735" cy="150" r="3" fill="#1ABB9B"/>
+<circle cx="791.21" cy="182.45" r="3" fill="none" stroke="#f7ca88" stroke-width=".8" opacity="0"><animate attributeName="r" values="3;14;14" keyTimes="0;.3;1" begin="0.33s" dur="4.0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0;0" keyTimes="0;.3;1" begin="0.33s" dur="4.0s" repeatCount="indefinite"/></circle>
+<circle cx="791.21" cy="182.45" r="3.5" fill="#f7ca88" opacity=".25"><animate attributeName="opacity" values="1;.25;.25" keyTimes="0;.6;1" begin="0.33s" dur="4.0s" repeatCount="indefinite"/></circle>
+<text class="label" x="801.21" y="186.45" opacity=".45">soc<animate attributeName="opacity" values="1;.45;.45" keyTimes="0;.6;1" begin="0.33s" dur="4.0s" repeatCount="indefinite"/></text>
+<circle cx="704.73" cy="233.16" r="3" fill="none" stroke="#f7ca88" stroke-width=".8" opacity="0"><animate attributeName="r" values="3;14;14" keyTimes="0;.3;1" begin="1.22s" dur="4.0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0;0" keyTimes="0;.3;1" begin="1.22s" dur="4.0s" repeatCount="indefinite"/></circle>
+<circle cx="704.73" cy="233.16" r="3.5" fill="#f7ca88" opacity=".25"><animate attributeName="opacity" values="1;.25;.25" keyTimes="0;.6;1" begin="1.22s" dur="4.0s" repeatCount="indefinite"/></circle>
+<text class="label" x="694.73" y="237.16" text-anchor="end" opacity=".45">ai / ml<animate attributeName="opacity" values="1;.45;.45" keyTimes="0;.6;1" begin="1.22s" dur="4.0s" repeatCount="indefinite"/></text>
+<circle cx="685.1" cy="131.84" r="3" fill="none" stroke="#f7ca88" stroke-width=".8" opacity="0"><animate attributeName="r" values="3;14;14" keyTimes="0;.3;1" begin="2.22s" dur="4.0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0;0" keyTimes="0;.3;1" begin="2.22s" dur="4.0s" repeatCount="indefinite"/></circle>
+<circle cx="685.1" cy="131.84" r="3.5" fill="#f7ca88" opacity=".25"><animate attributeName="opacity" values="1;.25;.25" keyTimes="0;.6;1" begin="2.22s" dur="4.0s" repeatCount="indefinite"/></circle>
+<text class="label" x="675.1" y="135.84" text-anchor="end" opacity=".45">ctf<animate attributeName="opacity" values="1;.45;.45" keyTimes="0;.6;1" begin="2.22s" dur="4.0s" repeatCount="indefinite"/></text>
+<circle cx="702.71" cy="61.29" r="3" fill="none" stroke="#f7ca88" stroke-width=".8" opacity="0"><animate attributeName="r" values="3;14;14" keyTimes="0;.3;1" begin="2.78s" dur="4.0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0;0" keyTimes="0;.3;1" begin="2.78s" dur="4.0s" repeatCount="indefinite"/></circle>
+<circle cx="702.71" cy="61.29" r="3.5" fill="#f7ca88" opacity=".25"><animate attributeName="opacity" values="1;.25;.25" keyTimes="0;.6;1" begin="2.78s" dur="4.0s" repeatCount="indefinite"/></circle>
+<text class="label" x="692.71" y="65.28999999999999" text-anchor="end" opacity=".45">research<animate attributeName="opacity" values="1;.45;.45" keyTimes="0;.6;1" begin="2.78s" dur="4.0s" repeatCount="indefinite"/></text>
+<circle cx="776.3" cy="78.47" r="3" fill="none" stroke="#f7ca88" stroke-width=".8" opacity="0"><animate attributeName="r" values="3;14;14" keyTimes="0;.3;1" begin="3.33s" dur="4.0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0;0" keyTimes="0;.3;1" begin="3.33s" dur="4.0s" repeatCount="indefinite"/></circle>
+<circle cx="776.3" cy="78.47" r="3.5" fill="#f7ca88" opacity=".25"><animate attributeName="opacity" values="1;.25;.25" keyTimes="0;.6;1" begin="3.33s" dur="4.0s" repeatCount="indefinite"/></circle>
+<text class="label" x="786.3" y="82.47" opacity=".45">pentest<animate attributeName="opacity" values="1;.45;.45" keyTimes="0;.6;1" begin="3.33s" dur="4.0s" repeatCount="indefinite"/></text>
+<text class="dim" x="48" y="64">~$</text>
+<text class="text key" x="75.6" y="64" style="animation-delay:0.70s">w</text>
+<text class="text key" x="84.8" y="64" style="animation-delay:0.81s">h</text>
+<text class="text key" x="94.0" y="64" style="animation-delay:0.92s">o</text>
+<text class="text key" x="103.2" y="64" style="animation-delay:1.03s">a</text>
+<text class="text key" x="112.4" y="64" style="animation-delay:1.14s">m</text>
+<text class="text key" x="121.6" y="64" style="animation-delay:1.25s">i</text>
+<rect class="cur1" x="75.6" y="51" width="8.2" height="18"/>
+<g class="out">
+<text class="name" x="48 82 116 150 184 218" y="132">mootez</text>
+<text class="handle" x="252 286 320 354 388" y="132">-1337</text>
+<text class="text" x="48.0 57.2 66.4 75.6 84.8 94.0 103.2 112.4 121.6 130.8 140.0 149.2 158.4 167.6 176.8 186.0 195.2 204.4 213.6 222.8 232.0 241.2 250.4 259.6 268.8 278.0 287.2 296.4 305.6 314.8 324.0 333.2 342.4 351.6 360.8 370.0 379.2 388.4 397.6 406.8 416.0" y="172">cybersecurity msc / pentest / soc / ai-ml</text>
+<circle class="pulse" cx="52" cy="205" r="4"/>
+<text class="dim" x="66" y="210">open to research collaborations</text>
+<text class="dim" x="48" y="252">~$</text>
+<rect class="cur2" x="75.6" y="239" width="8.2" height="18"/>
+</g></g></svg>

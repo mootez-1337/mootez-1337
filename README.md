@@ -7,6 +7,6 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mootez-1337&show_icons=true&count_private=true&hide_border=true&border_radius=14&bg_color=135,0E1726,13283D&title_color=F1EBDD&text_color=8AA0B8&icon_color=4FD1C5&ring_color=4FD1C5" height="170" alt="GitHub stats for mootez-1337">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mootez-1337&layout=compact&langs_count=8&hide_border=true&border_radius=14&bg_color=135,0E1726,13283D&title_color=F1EBDD&text_color=8AA0B8" height="170" alt="Most used languages for mootez-1337">
+  <img src="https://github-readme-stats.vercel.app/api?username=mootez-1337&show_icons=true&count_private=true&hide_border=true&border_radius=12&bg_color=222D31&title_color=F8F8F8&text_color=D8D8D8&icon_color=8D8F8D&ring_color=8D8F8D" height="170" alt="GitHub stats for mootez-1337">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mootez-1337&layout=compact&langs_count=8&hide_border=true&border_radius=12&bg_color=222D31&title_color=F8F8F8&text_color=D8D8D8" height="170" alt="Most used languages for mootez-1337">
 </p>
