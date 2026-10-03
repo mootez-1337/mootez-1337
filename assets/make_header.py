@@ -1,121 +1,154 @@
 #!/usr/bin/env python3
-"""Generate assets/header.svg: an xxd-style hex dump that decodes into the intro text.
+"""Generate assets/header.svg: name decode on the left, radar sweep on the right.
 
-Edit LINES (each exactly 16 characters) and re-run: python3 assets/make_header.py
+Edit the settings below and re-run: python3 assets/make_header.py
 """
+import math
 import random
 from pathlib import Path
 
-LINES = [
-    "hi, i'm mootez. ",
-    "msc in cybersec.",
-    "pentest + soc.  ",
-    "learning ai/ml. ",
-    "open to research",
-]
-COMMAND = "$ xxd mootez-1337.bin"
+NAME, HANDLE = "mootez", "-1337"
+PROMPT = "~$ whoami"
+SUBTITLE = "cybersecurity msc / pentest / soc / ai-ml"
+STATUS = "open to research collaborations"
+# (label, angle in degrees clockwise from east, distance from centre 0..1)
+BLIPS = [("soc", 30, 0.55), ("ai / ml", 110, 0.75), ("ctf", 200, 0.45),
+         ("research", 250, 0.8), ("pentest", 300, 0.7)]
 
-BG, RULE = "#1C2633", "#2E3B4C"
-DIM, NOISE = "#6F8197", "#4A5A6E"
-HEX, TEXT, AMBER = "#C9D1DB", "#EDE6D6", "#E9A23B"
+W, H = 900, 300
+BG1, BG2, DOT = "#0E1726", "#13283D", "#1E3450"
+TEAL, TEAL_DIM, BONE, MUTED, AMBER = "#4FD1C5", "#2C7A7B", "#F1EBDD", "#8AA0B8", "#FFB547"
+MONO = "'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'DejaVu Sans Mono', monospace"
 
-FONT = 15
-ADV = 9.4                 # fixed glyph advance; every glyph is placed explicitly
-PAD = 32
-LINE_H = 26
-TOP = 82                  # baseline of the first dump row
-COLS = 67                 # width of one xxd line in characters
-
-ROW_START, ROW_GAP, CELL_GAP = 0.5, 0.55, 0.035
-FRAMES, FRAME_T = 5, 0.07
+LEFT = 48
+NAME_SIZE, NAME_ADV = 58, 35.6
+SUB_SIZE, SUB_ADV = 16, 9.8
+CX, CY, R = 735, 150, 118
+SWEEP = 4.0                                    # seconds per radar revolution
 
 rng = random.Random(1337)
-HEXDIGITS = "0123456789abcdef"
-NOISE_ASCII = "abcdefghijklmnopqrstuvwxyz0123456789.:/#%$@!?*+=-_~"
+NOISE = "abcdefghijklmnopqrstuvwxyz0123456789#%$@?*+=/<>"
 
 
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("'", "&#39;")
 
 
-def x(col):
-    return round(PAD + col * ADV, 2)
+def polar(deg, dist):
+    a = math.radians(deg)
+    return round(CX + math.cos(a) * dist, 2), round(CY + math.sin(a) * dist, 2)
 
 
-def hex_col(b):
-    return 10 + (b // 2) * 5 + (b % 2) * 2
+out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
+       f'role="img" aria-labelledby="t d">',
+       f'<title id="t">{NAME}{HANDLE}</title>',
+       f'<desc id="d">{esc(NAME + HANDLE)}: {esc(SUBTITLE)}. {esc(STATUS)}.</desc>']
 
+out.append(f"""<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{BG1}"/><stop offset="1" stop-color="{BG2}"/></linearGradient>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="{DOT}"/></pattern>
+<radialGradient id="scope"><stop offset="0" stop-color="{TEAL}" stop-opacity=".10"/><stop offset="1" stop-color="{TEAL}" stop-opacity="0"/></radialGradient>
+<filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+<clipPath id="card"><rect width="{W}" height="{H}" rx="14"/></clipPath>
+</defs>""")
 
-def ascii_col(b):
-    return 51 + b
+name_done = 0.3 + len(NAME + HANDLE) * 0.08 + 0.35
+type_start, type_step = name_done + 0.15, 0.035
+type_done = type_start + len(SUBTITLE) * type_step
+status_at = type_done + 0.3
 
-
-def glyphs(chars, cols, y, cls, extra=""):
-    xs = " ".join(str(x(c)) for c in cols)
-    return f'<text x="{xs}" y="{y}" class="{cls}"{extra}>{esc("".join(chars))}</text>'
-
-
-assert all(len(l) == 16 for l in LINES), "every line must be exactly 16 characters"
-
-width = round(PAD * 2 + COLS * ADV)
-last_y = TOP + (len(LINES) - 1) * LINE_H
-prompt_y = last_y + LINE_H + 14
-height = prompt_y + 30
-done = ROW_START + (len(LINES) - 1) * ROW_GAP + 16 * CELL_GAP + 0.25
-
-out = []
-out.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
-           f'viewBox="0 0 {width} {height}" role="img" aria-labelledby="t d">')
-out.append('<title id="t">mootez-1337</title>')
-out.append(f'<desc id="d">A hex dump that decodes to: {esc(" ".join(l.strip() for l in LINES))}</desc>')
 out.append(f"""<style>
-text {{ font-family: 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'DejaVu Sans Mono', monospace; font-size: {FONT}px; }}
-.cmd {{ fill: {DIM}; }}
-.off {{ fill: {DIM}; }}
-.noise {{ fill: {NOISE}; opacity: 0; animation: flick {FRAMES * FRAME_T:.2f}s linear infinite; }}
-.hex {{ fill: {HEX}; }}
-.asc {{ fill: {TEXT}; }}
-.cell {{ opacity: 0; animation: lock .12s ease-out forwards; }}
-.done {{ opacity: 0; animation: lock .2s ease-out {done:.2f}s forwards; }}
-.caret {{ fill: {AMBER}; animation: blink 1.06s steps(1) {done:.2f}s infinite; }}
-@keyframes flick {{ 0%, 19.99% {{ opacity: 1; }} 20%, 100% {{ opacity: 0; }} }}
-@keyframes lock {{ to {{ opacity: 1; }} }}
+text {{ font-family: {MONO}; }}
+.prompt {{ fill: {MUTED}; font-size: 15px; }}
+.name {{ font-size: {NAME_SIZE}px; font-weight: 800; }}
+.bone {{ fill: {BONE}; }} .teal {{ fill: {TEAL}; }}
+.noise {{ fill: {TEAL_DIM}; font-size: {NAME_SIZE}px; font-weight: 800; opacity: 0; animation: flick .32s linear infinite; }}
+.nz {{ animation: hide 0s forwards; }}
+.lock {{ opacity: 0; animation: show .15s ease-out forwards; }}
+.sub {{ fill: {BONE}; font-size: {SUB_SIZE}px; opacity: .85; }}
+.ch {{ opacity: 0; animation: show 0s forwards; }}
+.caret {{ fill: {TEAL}; opacity: 0; animation: travel {type_done - type_start:.2f}s steps({len(SUBTITLE)}, end) {type_start:.2f}s forwards, blink 1.06s steps(1) {type_start:.2f}s infinite; }}
+.status {{ opacity: 0; animation: show .4s ease-out {status_at:.2f}s forwards; }}
+.status text {{ fill: {MUTED}; font-size: 14px; }}
+.pulse {{ fill: {AMBER}; transform-box: fill-box; transform-origin: center; animation: pulse 2s ease-out infinite; }}
+.label {{ fill: {MUTED}; font-size: 12px; }}
+.ring {{ fill: none; stroke: {TEAL}; stroke-opacity: .22; }}
+@keyframes flick {{ 0%, 24.99% {{ opacity: 1; }} 25%, 100% {{ opacity: 0; }} }}
+@keyframes hide {{ to {{ visibility: hidden; }} }}
+@keyframes show {{ to {{ opacity: 1; }} }}
 @keyframes blink {{ 0%, 50% {{ opacity: 1; }} 50.01%, 100% {{ opacity: 0; }} }}
+@keyframes travel {{ from {{ transform: translateX(0); }} to {{ transform: translateX({len(SUBTITLE) * SUB_ADV:.1f}px); }} }}
+@keyframes pulse {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: .35; }} }}
 @media (prefers-reduced-motion: reduce) {{
   .noise {{ display: none; }}
-  .cell, .done, .caret {{ animation: none; opacity: 1; }}
+  .lock, .ch, .status {{ animation: none; opacity: 1; }}
+  .caret, .pulse {{ animation: none; }}
+  .caret {{ opacity: 0; }}
 }}
 </style>""")
-out.append(f'<rect width="{width}" height="{height}" rx="10" fill="{BG}"/>')
-out.append(f'<line x1="{PAD}" x2="{width - PAD}" y1="{TOP - 28}" y2="{TOP - 28}" stroke="{RULE}"/>')
-out.append(glyphs(COMMAND, range(len(COMMAND)), TOP - 40, "cmd"))
 
-for r, line in enumerate(LINES):
-    y = TOP + r * LINE_H
-    out.append(glyphs(f"{r * 16:08x}:", range(9), y, "off"))
+out.append('<g clip-path="url(#card)">')
+out.append(f'<rect width="{W}" height="{H}" fill="url(#bg)"/><rect width="{W}" height="{H}" fill="url(#dots)" opacity=".7"/>')
 
-    # noise layer: FRAMES full-row scrambles, each visible for one FRAME_T slot
-    cols = [c for b in range(16) for c in (hex_col(b), hex_col(b) + 1)] + [ascii_col(b) for b in range(16)]
-    for f in range(FRAMES):
-        chars = [rng.choice(HEXDIGITS) for _ in range(32)] + [rng.choice(NOISE_ASCII) for _ in range(16)]
-        out.append(glyphs(chars, cols, y, "noise", f' style="animation-delay:-{f * FRAME_T:.2f}s"'))
+# radar
+out.append(f'<circle cx="{CX}" cy="{CY}" r="{R}" fill="url(#scope)"/>')
+for f in (1, 0.66, 0.33):
+    out.append(f'<circle class="ring" cx="{CX}" cy="{CY}" r="{round(R * f, 1)}"/>')
+out.append(f'<path class="ring" d="M{CX - R} {CY}H{CX + R}M{CX} {CY - R}V{CY + R}"/>')
+out.append('<g>')
+for i in range(14):                            # trailing wedge: thin slices fading out behind the beam
+    a0, a1 = -(i + 1) * 4, -i * 4
+    x0, y0 = polar(a0, R)
+    x1, y1 = polar(a1, R)
+    out.append(f'<path d="M{CX} {CY}L{x0} {y0}A{R} {R} 0 0 1 {x1} {y1}Z" fill="{TEAL}" '
+               f'fill-opacity="{round(0.30 * (1 - i / 14) ** 1.6, 3)}"/>')
+ex, ey = polar(0, R)
+out.append(f'<line x1="{CX}" y1="{CY}" x2="{ex}" y2="{ey}" stroke="{TEAL}" stroke-width="2"/>'
+           f'<animateTransform attributeName="transform" type="rotate" from="0 {CX} {CY}" '
+           f'to="360 {CX} {CY}" dur="{SWEEP}s" repeatCount="indefinite"/></g>')
+out.append(f'<circle cx="{CX}" cy="{CY}" r="3" fill="{TEAL}"/>')
+for label, deg, dist in BLIPS:
+    # blips share the beam's SMIL clock, so each ping lands exactly as the beam crosses it
+    bx, by = polar(deg, R * dist)
+    t = f'begin="{deg / 360 * SWEEP:.2f}s" dur="{SWEEP}s" repeatCount="indefinite"'
+    fade = f'<animate attributeName="opacity" values="1;.3;.3" keyTimes="0;.6;1" {t}/>'
+    left = math.cos(math.radians(deg)) < -0.2
+    lx = bx - 10 if left else bx + 10
+    anchor = ' text-anchor="end"' if left else ""
+    out.append(f'<circle cx="{bx}" cy="{by}" r="3" fill="none" stroke="{AMBER}" stroke-width=".8" opacity="0">'
+               f'<animate attributeName="r" values="3;14;14" keyTimes="0;.3;1" {t}/>'
+               f'<animate attributeName="opacity" values=".9;0;0" keyTimes="0;.3;1" {t}/></circle>')
+    out.append(f'<circle cx="{bx}" cy="{by}" r="3.5" fill="{AMBER}" opacity=".3">{fade}</circle>')
+    out.append(f'<text class="label" x="{lx}" y="{by + 4}"{anchor} opacity=".45">{esc(label)}{fade}</text>')
 
-    # locked layer: each byte covers its noise with a background rect, left to right
-    for b, ch in enumerate(line):
-        delay = ROW_START + r * ROW_GAP + b * CELL_GAP
-        top = y - FONT - 2
-        hc, ac = hex_col(b), ascii_col(b)
-        out.append(f'<g class="cell" style="animation-delay:{delay:.3f}s">')
-        out.append(f'<rect x="{x(hc)}" y="{top}" width="{round(ADV * 2, 2)}" height="{LINE_H - 4}" fill="{BG}"/>')
-        out.append(f'<rect x="{x(ac)}" y="{top}" width="{ADV}" height="{LINE_H - 4}" fill="{BG}"/>')
-        out.append(glyphs(f"{ord(ch):02x}", (hc, hc + 1), y, "hex"))
-        if ch != " ":
-            out.append(glyphs(ch, (ac,), y, "asc"))
-        out.append("</g>")
+# left column
+out.append(f'<text class="prompt" x="{LEFT}" y="78">{esc(PROMPT)}</text>')
+full = NAME + HANDLE
+ny = 150
+glow_xs = " ".join(str(round(LEFT + i * NAME_ADV, 1)) for i in range(len(full)))
+out.append(f'<text class="name lock" x="{glow_xs}" y="{ny}" fill="{TEAL}" opacity=".5" filter="url(#glow)" '
+           f'style="animation-delay:{name_done - 0.2:.2f}s">{esc(full)}</text>')
+for i, ch in enumerate(full):
+    x = round(LEFT + i * NAME_ADV, 1)
+    lock = 0.3 + i * 0.08 + rng.uniform(0.1, 0.35)
+    out.append(f'<g class="nz" style="animation-delay:{lock:.2f}s">')
+    for f in range(4):
+        out.append(f'<text class="noise" x="{x}" y="{ny}" style="animation-delay:-{f * 0.08:.2f}s">'
+                   f'{esc(rng.choice(NOISE))}</text>')
+    out.append('</g>')
+    cls = "bone" if i < len(NAME) else "teal"
+    out.append(f'<text class="name lock {cls}" x="{x}" y="{ny}" style="animation-delay:{lock:.2f}s">{esc(ch)}</text>')
 
-out.append(f'<g class="done">{glyphs("$", (0,), prompt_y, "cmd")}'
-           f'<rect class="caret" x="{x(2)}" y="{prompt_y - FONT + 2}" width="{ADV}" height="{FONT + 2}"/></g>')
-out.append("</svg>")
+sy = 192
+for i, ch in enumerate(SUBTITLE):
+    if ch != " ":
+        out.append(f'<text class="sub ch" x="{round(LEFT + i * SUB_ADV, 1)}" y="{sy}" '
+                   f'style="animation-delay:{type_start + i * type_step:.3f}s">{esc(ch)}</text>')
+out.append(f'<rect class="caret" x="{LEFT}" y="{sy - SUB_SIZE + 2}" width="{SUB_ADV - 1}" height="{SUB_SIZE + 2}"/>')
+
+out.append(f'<g class="status"><circle class="pulse" cx="{LEFT + 5}" cy="232" r="5"/>'
+           f'<text x="{LEFT + 20}" y="237">{esc(STATUS)}</text></g>')
+out.append('</g></svg>')
 
 Path(__file__).with_name("header.svg").write_text("\n".join(out) + "\n")
-print(f"wrote header.svg ({width}x{height}, decode finishes at {done:.2f}s)")
+print(f"wrote header.svg ({W}x{H}); intro finishes at {status_at + 0.4:.2f}s")

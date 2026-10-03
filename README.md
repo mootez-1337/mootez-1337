@@ -1,12 +1,12 @@
-<img src="assets/header.svg" width="694" alt="A hex dump that decodes to: hi, i'm mootez. msc in cybersec. pentest + soc. learning ai/ml. open to research">
+<img src="assets/header.svg" width="100%" alt="mootez-1337: cybersecurity msc / pentest / soc / ai-ml. Open to research collaborations.">
 
-```text
-lang    python  c  rust  typescript  javascript  bash  java  php  lua  latex
-web     react  next.js  node  react native  tailwind  rxjs  prisma  selenium
-data    postgres  sqlite  firebase
-ml      numpy  pandas  scikit-learn  matplotlib
-infra   aws  azure  nginx  apache  github actions
-```
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=py,c,rust,ts,js,bash,java,php,lua,latex&theme=dark&perline=10" alt="Languages: Python, C, Rust, TypeScript, JavaScript, Bash, Java, PHP, Lua, LaTeX"><br>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,tailwind,prisma,selenium,postgres,sqlite,firebase,sklearn&theme=dark&perline=10" alt="Web and data: React, Next.js, Node.js, Tailwind, Prisma, Selenium, PostgreSQL, SQLite, Firebase, scikit-learn"><br>
+  <img src="https://skillicons.dev/icons?i=aws,azure,nginx,githubactions,linux&theme=dark&perline=10" alt="Infrastructure: AWS, Azure, Nginx, GitHub Actions, Linux">
+</p>
 
-<img src="https://github-readme-stats.vercel.app/api?username=mootez-1337&show_icons=true&count_private=true&hide_border=true&border_radius=10&bg_color=1C2633&title_color=EDE6D6&text_color=C9D1DB&icon_color=6F8197" height="165" alt="GitHub stats for mootez-1337">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mootez-1337&layout=compact&langs_count=8&hide_border=true&border_radius=10&bg_color=1C2633&title_color=EDE6D6&text_color=C9D1DB" height="165" alt="Most used languages for mootez-1337">
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=mootez-1337&show_icons=true&count_private=true&hide_border=true&border_radius=14&bg_color=135,0E1726,13283D&title_color=F1EBDD&text_color=8AA0B8&icon_color=4FD1C5&ring_color=4FD1C5" height="170" alt="GitHub stats for mootez-1337">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mootez-1337&layout=compact&langs_count=8&hide_border=true&border_radius=14&bg_color=135,0E1726,13283D&title_color=F1EBDD&text_color=8AA0B8" height="170" alt="Most used languages for mootez-1337">
+</p>
