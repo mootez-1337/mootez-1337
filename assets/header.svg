@@ -1,0 +1,523 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="694" height="256" viewBox="0 0 694 256" role="img" aria-labelledby="t d">
+<title id="t">mootez-1337</title>
+<desc id="d">A hex dump that decodes to: hi, i&#39;m mootez. msc in cybersec. pentest + soc. learning ai/ml. open to research</desc>
+<style>
+text { font-family: 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'DejaVu Sans Mono', monospace; font-size: 15px; }
+.cmd { fill: #6F8197; }
+.off { fill: #6F8197; }
+.noise { fill: #4A5A6E; opacity: 0; animation: flick 0.35s linear infinite; }
+.hex { fill: #C9D1DB; }
+.asc { fill: #EDE6D6; }
+.cell { opacity: 0; animation: lock .12s ease-out forwards; }
+.done { opacity: 0; animation: lock .2s ease-out 3.51s forwards; }
+.caret { fill: #E9A23B; animation: blink 1.06s steps(1) 3.51s infinite; }
+@keyframes flick { 0%, 19.99% { opacity: 1; } 20%, 100% { opacity: 0; } }
+@keyframes lock { to { opacity: 1; } }
+@keyframes blink { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .noise { display: none; }
+  .cell, .done, .caret { animation: none; opacity: 1; }
+}
+</style>
+<rect width="694" height="256" rx="10" fill="#1C2633"/>
+<line x1="32" x2="662" y1="54" y2="54" stroke="#2E3B4C"/>
+<text x="32.0 41.4 50.8 60.2 69.6 79.0 88.4 97.8 107.2 116.6 126.0 135.4 144.8 154.2 163.6 173.0 182.4 191.8 201.2 210.6 220.0" y="42" class="cmd">$ xxd mootez-1337.bin</text>
+<text x="32.0 41.4 50.8 60.2 69.6 79.0 88.4 97.8 107.2" y="82" class="off">00000000:</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="82" class="noise" style="animation-delay:-0.00s">b5acb9c6b3dc2bcc90b3e75ae86212d1!b%mmgsm2=.ua~#v</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="82" class="noise" style="animation-delay:-0.07s">d7196551fe0fb882415a26e814db1d94d%3wyenw@!$/q*nm</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="82" class="noise" style="animation-delay:-0.14s">4fcd857ac6d5fa106d9acb79ecc487c23?avfr57/yic6:ym</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="82" class="noise" style="animation-delay:-0.21s">e3791f6ba8341f9044e2fe0565771eec!t-ub?1w~%g~kf*a</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="82" class="noise" style="animation-delay:-0.28s">9656325c71d7daef62224b8c00713c89j?a0t5xc_@ua-/df</text>
+<g class="cell" style="animation-delay:0.500s">
+<rect x="126.0" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="511.4" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="126.0 135.4" y="82" class="hex">68</text>
+<text x="511.4" y="82" class="asc">h</text>
+</g>
+<g class="cell" style="animation-delay:0.535s">
+<rect x="144.8" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="520.8" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="144.8 154.2" y="82" class="hex">69</text>
+<text x="520.8" y="82" class="asc">i</text>
+</g>
+<g class="cell" style="animation-delay:0.570s">
+<rect x="173.0" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="530.2" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="173.0 182.4" y="82" class="hex">2c</text>
+<text x="530.2" y="82" class="asc">,</text>
+</g>
+<g class="cell" style="animation-delay:0.605s">
+<rect x="191.8" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="539.6" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="191.8 201.2" y="82" class="hex">20</text>
+</g>
+<g class="cell" style="animation-delay:0.640s">
+<rect x="220.0" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="549.0" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="220.0 229.4" y="82" class="hex">69</text>
+<text x="549.0" y="82" class="asc">i</text>
+</g>
+<g class="cell" style="animation-delay:0.675s">
+<rect x="238.8" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="558.4" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="238.8 248.2" y="82" class="hex">27</text>
+<text x="558.4" y="82" class="asc">&#39;</text>
+</g>
+<g class="cell" style="animation-delay:0.710s">
+<rect x="267.0" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="567.8" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="267.0 276.4" y="82" class="hex">6d</text>
+<text x="567.8" y="82" class="asc">m</text>
+</g>
+<g class="cell" style="animation-delay:0.745s">
+<rect x="285.8" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="577.2" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="285.8 295.2" y="82" class="hex">20</text>
+</g>
+<g class="cell" style="animation-delay:0.780s">
+<rect x="314.0" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="586.6" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="314.0 323.4" y="82" class="hex">6d</text>
+<text x="586.6" y="82" class="asc">m</text>
+</g>
+<g class="cell" style="animation-delay:0.815s">
+<rect x="332.8" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="596.0" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="332.8 342.2" y="82" class="hex">6f</text>
+<text x="596.0" y="82" class="asc">o</text>
+</g>
+<g class="cell" style="animation-delay:0.850s">
+<rect x="361.0" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="605.4" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="361.0 370.4" y="82" class="hex">6f</text>
+<text x="605.4" y="82" class="asc">o</text>
+</g>
+<g class="cell" style="animation-delay:0.885s">
+<rect x="379.8" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="614.8" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="379.8 389.2" y="82" class="hex">74</text>
+<text x="614.8" y="82" class="asc">t</text>
+</g>
+<g class="cell" style="animation-delay:0.920s">
+<rect x="408.0" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="624.2" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="408.0 417.4" y="82" class="hex">65</text>
+<text x="624.2" y="82" class="asc">e</text>
+</g>
+<g class="cell" style="animation-delay:0.955s">
+<rect x="426.8" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="633.6" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="426.8 436.2" y="82" class="hex">7a</text>
+<text x="633.6" y="82" class="asc">z</text>
+</g>
+<g class="cell" style="animation-delay:0.990s">
+<rect x="455.0" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="643.0" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="455.0 464.4" y="82" class="hex">2e</text>
+<text x="643.0" y="82" class="asc">.</text>
+</g>
+<g class="cell" style="animation-delay:1.025s">
+<rect x="473.8" y="65" width="18.8" height="22" fill="#1C2633"/>
+<rect x="652.4" y="65" width="9.4" height="22" fill="#1C2633"/>
+<text x="473.8 483.2" y="82" class="hex">20</text>
+</g>
+<text x="32.0 41.4 50.8 60.2 69.6 79.0 88.4 97.8 107.2" y="108" class="off">00000010:</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="108" class="noise" style="animation-delay:-0.00s">1bddcf50f562d625d7275d0d93a91fbab_x::v?ng8b?dz?7</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="108" class="noise" style="animation-delay:-0.07s">c1c01de2ae62ebb14437d5468cfa2b65/4r8f!r4qj+g-nj*</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="108" class="noise" style="animation-delay:-0.14s">541017b3962dcc265b61739a9a918daa?f$8-:r8rcudi155</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="108" class="noise" style="animation-delay:-0.21s">a5c0e26c96fde4ccc528a48883354bd46h$j6y?w@19b_tfy</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="108" class="noise" style="animation-delay:-0.28s">ce03174720110a4a799a9ca51c3ddc7e-%eoa**7lzr-/:vq</text>
+<g class="cell" style="animation-delay:1.050s">
+<rect x="126.0" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="511.4" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="126.0 135.4" y="108" class="hex">6d</text>
+<text x="511.4" y="108" class="asc">m</text>
+</g>
+<g class="cell" style="animation-delay:1.085s">
+<rect x="144.8" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="520.8" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="144.8 154.2" y="108" class="hex">73</text>
+<text x="520.8" y="108" class="asc">s</text>
+</g>
+<g class="cell" style="animation-delay:1.120s">
+<rect x="173.0" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="530.2" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="173.0 182.4" y="108" class="hex">63</text>
+<text x="530.2" y="108" class="asc">c</text>
+</g>
+<g class="cell" style="animation-delay:1.155s">
+<rect x="191.8" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="539.6" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="191.8 201.2" y="108" class="hex">20</text>
+</g>
+<g class="cell" style="animation-delay:1.190s">
+<rect x="220.0" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="549.0" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="220.0 229.4" y="108" class="hex">69</text>
+<text x="549.0" y="108" class="asc">i</text>
+</g>
+<g class="cell" style="animation-delay:1.225s">
+<rect x="238.8" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="558.4" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="238.8 248.2" y="108" class="hex">6e</text>
+<text x="558.4" y="108" class="asc">n</text>
+</g>
+<g class="cell" style="animation-delay:1.260s">
+<rect x="267.0" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="567.8" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="267.0 276.4" y="108" class="hex">20</text>
+</g>
+<g class="cell" style="animation-delay:1.295s">
+<rect x="285.8" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="577.2" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="285.8 295.2" y="108" class="hex">63</text>
+<text x="577.2" y="108" class="asc">c</text>
+</g>
+<g class="cell" style="animation-delay:1.330s">
+<rect x="314.0" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="586.6" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="314.0 323.4" y="108" class="hex">79</text>
+<text x="586.6" y="108" class="asc">y</text>
+</g>
+<g class="cell" style="animation-delay:1.365s">
+<rect x="332.8" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="596.0" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="332.8 342.2" y="108" class="hex">62</text>
+<text x="596.0" y="108" class="asc">b</text>
+</g>
+<g class="cell" style="animation-delay:1.400s">
+<rect x="361.0" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="605.4" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="361.0 370.4" y="108" class="hex">65</text>
+<text x="605.4" y="108" class="asc">e</text>
+</g>
+<g class="cell" style="animation-delay:1.435s">
+<rect x="379.8" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="614.8" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="379.8 389.2" y="108" class="hex">72</text>
+<text x="614.8" y="108" class="asc">r</text>
+</g>
+<g class="cell" style="animation-delay:1.470s">
+<rect x="408.0" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="624.2" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="408.0 417.4" y="108" class="hex">73</text>
+<text x="624.2" y="108" class="asc">s</text>
+</g>
+<g class="cell" style="animation-delay:1.505s">
+<rect x="426.8" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="633.6" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="426.8 436.2" y="108" class="hex">65</text>
+<text x="633.6" y="108" class="asc">e</text>
+</g>
+<g class="cell" style="animation-delay:1.540s">
+<rect x="455.0" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="643.0" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="455.0 464.4" y="108" class="hex">63</text>
+<text x="643.0" y="108" class="asc">c</text>
+</g>
+<g class="cell" style="animation-delay:1.575s">
+<rect x="473.8" y="91" width="18.8" height="22" fill="#1C2633"/>
+<rect x="652.4" y="91" width="9.4" height="22" fill="#1C2633"/>
+<text x="473.8 483.2" y="108" class="hex">2e</text>
+<text x="652.4" y="108" class="asc">.</text>
+</g>
+<text x="32.0 41.4 50.8 60.2 69.6 79.0 88.4 97.8 107.2" y="134" class="off">00000020:</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="134" class="noise" style="animation-delay:-0.00s">e5208ae097fc3b1078e9e50aec17f5f8t.k48tz83:9701cj</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="134" class="noise" style="animation-delay:-0.07s">a3ca377b85e7a3f9213676dd310470bf7#dme7u6iv88~ru8</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="134" class="noise" style="animation-delay:-0.14s">e83e93116882474534b8258d8d0d68f9?q?yh#97qlu67v53</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="134" class="noise" style="animation-delay:-0.21s">4d8e49b1af2849958c5a7ba0be7afd74=owqnj!t!94@z@_d</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="134" class="noise" style="animation-delay:-0.28s">89a05a3a1426f6bd57670b5fa3939c1er40ut!o=i4t#17b2</text>
+<g class="cell" style="animation-delay:1.600s">
+<rect x="126.0" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="511.4" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="126.0 135.4" y="134" class="hex">70</text>
+<text x="511.4" y="134" class="asc">p</text>
+</g>
+<g class="cell" style="animation-delay:1.635s">
+<rect x="144.8" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="520.8" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="144.8 154.2" y="134" class="hex">65</text>
+<text x="520.8" y="134" class="asc">e</text>
+</g>
+<g class="cell" style="animation-delay:1.670s">
+<rect x="173.0" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="530.2" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="173.0 182.4" y="134" class="hex">6e</text>
+<text x="530.2" y="134" class="asc">n</text>
+</g>
+<g class="cell" style="animation-delay:1.705s">
+<rect x="191.8" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="539.6" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="191.8 201.2" y="134" class="hex">74</text>
+<text x="539.6" y="134" class="asc">t</text>
+</g>
+<g class="cell" style="animation-delay:1.740s">
+<rect x="220.0" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="549.0" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="220.0 229.4" y="134" class="hex">65</text>
+<text x="549.0" y="134" class="asc">e</text>
+</g>
+<g class="cell" style="animation-delay:1.775s">
+<rect x="238.8" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="558.4" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="238.8 248.2" y="134" class="hex">73</text>
+<text x="558.4" y="134" class="asc">s</text>
+</g>
+<g class="cell" style="animation-delay:1.810s">
+<rect x="267.0" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="567.8" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="267.0 276.4" y="134" class="hex">74</text>
+<text x="567.8" y="134" class="asc">t</text>
+</g>
+<g class="cell" style="animation-delay:1.845s">
+<rect x="285.8" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="577.2" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="285.8 295.2" y="134" class="hex">20</text>
+</g>
+<g class="cell" style="animation-delay:1.880s">
+<rect x="314.0" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="586.6" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="314.0 323.4" y="134" class="hex">2b</text>
+<text x="586.6" y="134" class="asc">+</text>
+</g>
+<g class="cell" style="animation-delay:1.915s">
+<rect x="332.8" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="596.0" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="332.8 342.2" y="134" class="hex">20</text>
+</g>
+<g class="cell" style="animation-delay:1.950s">
+<rect x="361.0" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="605.4" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="361.0 370.4" y="134" class="hex">73</text>
+<text x="605.4" y="134" class="asc">s</text>
+</g>
+<g class="cell" style="animation-delay:1.985s">
+<rect x="379.8" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="614.8" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="379.8 389.2" y="134" class="hex">6f</text>
+<text x="614.8" y="134" class="asc">o</text>
+</g>
+<g class="cell" style="animation-delay:2.020s">
+<rect x="408.0" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="624.2" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="408.0 417.4" y="134" class="hex">63</text>
+<text x="624.2" y="134" class="asc">c</text>
+</g>
+<g class="cell" style="animation-delay:2.055s">
+<rect x="426.8" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="633.6" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="426.8 436.2" y="134" class="hex">2e</text>
+<text x="633.6" y="134" class="asc">.</text>
+</g>
+<g class="cell" style="animation-delay:2.090s">
+<rect x="455.0" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="643.0" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="455.0 464.4" y="134" class="hex">20</text>
+</g>
+<g class="cell" style="animation-delay:2.125s">
+<rect x="473.8" y="117" width="18.8" height="22" fill="#1C2633"/>
+<rect x="652.4" y="117" width="9.4" height="22" fill="#1C2633"/>
+<text x="473.8 483.2" y="134" class="hex">20</text>
+</g>
+<text x="32.0 41.4 50.8 60.2 69.6 79.0 88.4 97.8 107.2" y="160" class="off">00000030:</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="160" class="noise" style="animation-delay:-0.00s">adcbf2f83fab17ed33236fcea7a92af7/~baigwm:%r7w%q6</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="160" class="noise" style="animation-delay:-0.07s">c45807d902fd7bda7a6257a33d245a16p0=n~-!!yhp9oo#u</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="160" class="noise" style="animation-delay:-0.14s">b97fa212de203b5eed8006a7a0f47824tj1q05wbf~*i~oap</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="160" class="noise" style="animation-delay:-0.21s">c1758578f618aff0cea389229e881c66m@c?hp%8qqqvl?~*</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="160" class="noise" style="animation-delay:-0.28s">6ef42433de1c2b0d1c1c7da88a6e154a2#oce8+h:cl=iyv9</text>
+<g class="cell" style="animation-delay:2.150s">
+<rect x="126.0" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="511.4" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="126.0 135.4" y="160" class="hex">6c</text>
+<text x="511.4" y="160" class="asc">l</text>
+</g>
+<g class="cell" style="animation-delay:2.185s">
+<rect x="144.8" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="520.8" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="144.8 154.2" y="160" class="hex">65</text>
+<text x="520.8" y="160" class="asc">e</text>
+</g>
+<g class="cell" style="animation-delay:2.220s">
+<rect x="173.0" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="530.2" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="173.0 182.4" y="160" class="hex">61</text>
+<text x="530.2" y="160" class="asc">a</text>
+</g>
+<g class="cell" style="animation-delay:2.255s">
+<rect x="191.8" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="539.6" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="191.8 201.2" y="160" class="hex">72</text>
+<text x="539.6" y="160" class="asc">r</text>
+</g>
+<g class="cell" style="animation-delay:2.290s">
+<rect x="220.0" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="549.0" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="220.0 229.4" y="160" class="hex">6e</text>
+<text x="549.0" y="160" class="asc">n</text>
+</g>
+<g class="cell" style="animation-delay:2.325s">
+<rect x="238.8" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="558.4" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="238.8 248.2" y="160" class="hex">69</text>
+<text x="558.4" y="160" class="asc">i</text>
+</g>
+<g class="cell" style="animation-delay:2.360s">
+<rect x="267.0" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="567.8" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="267.0 276.4" y="160" class="hex">6e</text>
+<text x="567.8" y="160" class="asc">n</text>
+</g>
+<g class="cell" style="animation-delay:2.395s">
+<rect x="285.8" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="577.2" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="285.8 295.2" y="160" class="hex">67</text>
+<text x="577.2" y="160" class="asc">g</text>
+</g>
+<g class="cell" style="animation-delay:2.430s">
+<rect x="314.0" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="586.6" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="314.0 323.4" y="160" class="hex">20</text>
+</g>
+<g class="cell" style="animation-delay:2.465s">
+<rect x="332.8" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="596.0" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="332.8 342.2" y="160" class="hex">61</text>
+<text x="596.0" y="160" class="asc">a</text>
+</g>
+<g class="cell" style="animation-delay:2.500s">
+<rect x="361.0" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="605.4" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="361.0 370.4" y="160" class="hex">69</text>
+<text x="605.4" y="160" class="asc">i</text>
+</g>
+<g class="cell" style="animation-delay:2.535s">
+<rect x="379.8" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="614.8" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="379.8 389.2" y="160" class="hex">2f</text>
+<text x="614.8" y="160" class="asc">/</text>
+</g>
+<g class="cell" style="animation-delay:2.570s">
+<rect x="408.0" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="624.2" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="408.0 417.4" y="160" class="hex">6d</text>
+<text x="624.2" y="160" class="asc">m</text>
+</g>
+<g class="cell" style="animation-delay:2.605s">
+<rect x="426.8" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="633.6" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="426.8 436.2" y="160" class="hex">6c</text>
+<text x="633.6" y="160" class="asc">l</text>
+</g>
+<g class="cell" style="animation-delay:2.640s">
+<rect x="455.0" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="643.0" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="455.0 464.4" y="160" class="hex">2e</text>
+<text x="643.0" y="160" class="asc">.</text>
+</g>
+<g class="cell" style="animation-delay:2.675s">
+<rect x="473.8" y="143" width="18.8" height="22" fill="#1C2633"/>
+<rect x="652.4" y="143" width="9.4" height="22" fill="#1C2633"/>
+<text x="473.8 483.2" y="160" class="hex">20</text>
+</g>
+<text x="32.0 41.4 50.8 60.2 69.6 79.0 88.4 97.8 107.2" y="186" class="off">00000040:</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="186" class="noise" style="animation-delay:-0.00s">b37edd9c57a4b8696a4aed27685c86b7i0n0_-e1n*2%k3da</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="186" class="noise" style="animation-delay:-0.07s">0e8d4875a4a99fbb808b8f46c442737a.v1.wk/+n-_tat*w</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="186" class="noise" style="animation-delay:-0.14s">8f1b725894789622916d3c1c4e1517b5nb!2si877@k%0r9-</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="186" class="noise" style="animation-delay:-0.21s">a3f5f54bab0829d2362da2a6e3eca5c7*ec~4alcqim-ca5.</text>
+<text x="126.0 135.4 144.8 154.2 173.0 182.4 191.8 201.2 220.0 229.4 238.8 248.2 267.0 276.4 285.8 295.2 314.0 323.4 332.8 342.2 361.0 370.4 379.8 389.2 408.0 417.4 426.8 436.2 455.0 464.4 473.8 483.2 511.4 520.8 530.2 539.6 549.0 558.4 567.8 577.2 586.6 596.0 605.4 614.8 624.2 633.6 643.0 652.4" y="186" class="noise" style="animation-delay:-0.28s">9a645403753f2775d2cc664a05b68c5d70zgbrs9?gi=-4=#</text>
+<g class="cell" style="animation-delay:2.700s">
+<rect x="126.0" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="511.4" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="126.0 135.4" y="186" class="hex">6f</text>
+<text x="511.4" y="186" class="asc">o</text>
+</g>
+<g class="cell" style="animation-delay:2.735s">
+<rect x="144.8" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="520.8" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="144.8 154.2" y="186" class="hex">70</text>
+<text x="520.8" y="186" class="asc">p</text>
+</g>
+<g class="cell" style="animation-delay:2.770s">
+<rect x="173.0" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="530.2" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="173.0 182.4" y="186" class="hex">65</text>
+<text x="530.2" y="186" class="asc">e</text>
+</g>
+<g class="cell" style="animation-delay:2.805s">
+<rect x="191.8" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="539.6" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="191.8 201.2" y="186" class="hex">6e</text>
+<text x="539.6" y="186" class="asc">n</text>
+</g>
+<g class="cell" style="animation-delay:2.840s">
+<rect x="220.0" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="549.0" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="220.0 229.4" y="186" class="hex">20</text>
+</g>
+<g class="cell" style="animation-delay:2.875s">
+<rect x="238.8" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="558.4" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="238.8 248.2" y="186" class="hex">74</text>
+<text x="558.4" y="186" class="asc">t</text>
+</g>
+<g class="cell" style="animation-delay:2.910s">
+<rect x="267.0" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="567.8" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="267.0 276.4" y="186" class="hex">6f</text>
+<text x="567.8" y="186" class="asc">o</text>
+</g>
+<g class="cell" style="animation-delay:2.945s">
+<rect x="285.8" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="577.2" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="285.8 295.2" y="186" class="hex">20</text>
+</g>
+<g class="cell" style="animation-delay:2.980s">
+<rect x="314.0" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="586.6" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="314.0 323.4" y="186" class="hex">72</text>
+<text x="586.6" y="186" class="asc">r</text>
+</g>
+<g class="cell" style="animation-delay:3.015s">
+<rect x="332.8" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="596.0" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="332.8 342.2" y="186" class="hex">65</text>
+<text x="596.0" y="186" class="asc">e</text>
+</g>
+<g class="cell" style="animation-delay:3.050s">
+<rect x="361.0" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="605.4" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="361.0 370.4" y="186" class="hex">73</text>
+<text x="605.4" y="186" class="asc">s</text>
+</g>
+<g class="cell" style="animation-delay:3.085s">
+<rect x="379.8" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="614.8" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="379.8 389.2" y="186" class="hex">65</text>
+<text x="614.8" y="186" class="asc">e</text>
+</g>
+<g class="cell" style="animation-delay:3.120s">
+<rect x="408.0" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="624.2" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="408.0 417.4" y="186" class="hex">61</text>
+<text x="624.2" y="186" class="asc">a</text>
+</g>
+<g class="cell" style="animation-delay:3.155s">
+<rect x="426.8" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="633.6" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="426.8 436.2" y="186" class="hex">72</text>
+<text x="633.6" y="186" class="asc">r</text>
+</g>
+<g class="cell" style="animation-delay:3.190s">
+<rect x="455.0" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="643.0" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="455.0 464.4" y="186" class="hex">63</text>
+<text x="643.0" y="186" class="asc">c</text>
+</g>
+<g class="cell" style="animation-delay:3.225s">
+<rect x="473.8" y="169" width="18.8" height="22" fill="#1C2633"/>
+<rect x="652.4" y="169" width="9.4" height="22" fill="#1C2633"/>
+<text x="473.8 483.2" y="186" class="hex">68</text>
+<text x="652.4" y="186" class="asc">h</text>
+</g>
+<g class="done"><text x="32.0" y="226" class="cmd">$</text><rect class="caret" x="50.8" y="213" width="9.4" height="17"/></g>
+</svg>
